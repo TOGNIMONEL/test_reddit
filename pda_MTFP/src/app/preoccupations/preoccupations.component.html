@@ -1,0 +1,102 @@
+<div class="flex justify-center items-center min-h-screen bg-gray-100">
+  <div class="bg-white p-8 rounded-lg shadow-md max-w-4xl w-full">
+    <h1 class="text-center text-2xl font-bold mb-6 text-blue-600">Soumettre une Préoccupation</h1>
+    <form>
+      <!-- Agent de l'État -->
+      <div class="mb-4">
+        <label class="block font-medium mb-2">Êtes-vous agent de l'État ? :</label>
+        <div class="flex items-center space-x-4">
+          <label class="flex items-center">
+            <input type="radio" name="agent" value="oui" class="form-radio text-blue-600">
+            <span class="ml-2">OUI</span>
+          </label>
+          <label class="flex items-center">
+            <input type="radio" name="agent" value="non" class="form-radio text-blue-600">
+            <span class="ml-2">NON</span>
+          </label>
+        </div>
+      </div>
+      <!-- Matricule -->
+      <div class="mb-4">
+        <label for="matricule" class="block font-medium mb-2">Matricule :</label>
+        <input type="text" id="matricule" class="w-full border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500">
+      </div>
+      <!-- Nom et Prénoms -->
+      <div class="grid grid-cols-2 gap-4 mb-4">
+        <div>
+          <label for="nom" class="block font-medium mb-2">Nom :</label>
+          <input type="text" id="nom" class="w-full border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500">
+        </div>
+        <div>
+          <label for="prenom" class="block font-medium mb-2">Prénoms :</label>
+          <input type="text" id="prenom" class="w-full border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500">
+        </div>
+      </div>
+      <!-- Contact et Email -->
+      <div class="grid grid-cols-2 gap-4 mb-4">
+        <div>
+          <label for="contact" class="block font-medium mb-2">Contact :</label>
+          <input type="tel" id="contact" class="w-full border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500">
+        </div>
+        <div>
+          <label for="email" class="block font-medium mb-2">Email :</label>
+          <input type="email" id="email" class="w-full border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500">
+        </div>
+      </div>
+      <!-- Entité -->
+      <div class="mb-4">
+        <label for="entite" class="block font-medium mb-2">À quelle entité (Ministère ou Institution) s'adresse votre préoccupation ? :</label>
+        <select id="entite" class="w-full border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500">
+          <option>Choisir...</option>
+          <option>Ministère A</option>
+          <option>Ministère B</option>
+        </select>
+      </div>
+      <!-- Type de préoccupation -->
+      <div class="mb-4">
+        <label for="type-preoccupation" class="block font-medium mb-2">Type de préoccupation :</label>
+        <input type="text" id="type-preoccupation" class="w-full border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500">
+      </div>
+      <!-- Catégorie et Prestation -->
+      <div class="grid grid-cols-2 gap-4 mb-4">
+        <div>
+          <label for="categorie" class="block font-medium mb-2">Catégorie de la prestation :</label>
+          <input type="text" id="categorie" class="w-full border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500">
+        </div>
+        <div>
+          <label for="prestation" class="block font-medium mb-2">Prestation :</label>
+          <input type="text" id="prestation" class="w-full border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500">
+        </div>
+      </div>
+      <!-- Objet et Préoccupation -->
+      <div class="mb-4">
+        <label for="objet" class="block font-medium mb-2">Objet de la préoccupation :</label>
+        <input type="text" id="objet" class="w-full border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500">
+      </div>
+      <div class="mb-4">
+        <label for="preoccupation" class="block font-medium mb-2">Préoccupation :</label>
+        <textarea id="preoccupation" rows="4" class="w-full border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"></textarea>
+      </div>
+      <!-- Consentement -->
+      <div class="mb-4">
+        <label class="flex items-center">
+          <input type="checkbox" class="form-checkbox text-blue-600">
+          <span class="ml-2 text-sm">Je donne librement mon consentement pour la collecte et le traitement de mes données personnelles.</span>
+        </label>
+      </div>
+      <!-- Bouton Envoyer -->
+      <div class="text-center">
+        <button type="submit" class="bg-blue-600 text-white font-medium py-2 px-4 rounded-lg shadow hover:bg-blue-700 focus:ring-2 focus:ring-blue-500">
+          Envoyer
+        </button>
+      </div>
+      <!-- Note -->
+      <p class="text-sm text-gray-500 mt-4">
+        NB : Pour le suivi de vos préoccupations, veuillez vous inscrire pour disposer d'un espace personnalisé. <a href="#" class="text-blue-600">Cliquez ici</a>.
+      </p>
+    </form>
+  </div>
+</div>
+
+  <app-footer></app-footer>
+  

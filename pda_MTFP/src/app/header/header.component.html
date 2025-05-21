@@ -1,0 +1,50 @@
+  <header class="bg-white shadow-md">
+    <div class="container mx-auto px-4 flex justify-between items-center py-3">
+      <!-- Logo -->
+      <div class="flex items-center space-x-2">
+        <img src="assets/logo_mtfp.png" alt="" class=" w-44 h-auto">
+        <!-- <div class="text-sm font-semibold">
+          <p>MINISTÈRE DU TRAVAIL ET DE LA FONCTION PUBLIQUE</p>
+          <p class="text-xs">RÉPUBLIQUE DU BÉNIN</p>
+        </div> -->
+      </div>
+  
+      <!-- Navigation Links -->
+      <nav class="hidden md:flex space-x-6">
+        <!-- <img src="assets/Logo_KC.jpg" alt=""> -->
+        <a href="#" class="text-gray-600 hover:text-blue-600 font-medium">Accueil</a>
+        <a href="#" class="text-gray-600 hover:text-blue-600 font-medium">Nos Prestations</a>
+        <a href="#" class="text-gray-600 hover:text-blue-600 font-medium">E-services</a>
+        <a href="#" class="text-gray-600 hover:text-blue-600 font-medium">Mon espace Usager</a>
+        <a href="/preo" class="text-gray-600 hover:text-blue-600 font-medium">Préoccupations</a>
+        <a href="#" class="text-gray-600 hover:text-blue-600 font-medium">Contact</a>
+      </nav>
+  
+      <!-- Mobile Menu Button -->
+      <button title="Menu mobile"
+      (click)="toggleMenu()"
+        class="md:hidden text-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        id="menu-toggle"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+    </div>
+  
+    <!-- Mobile Navigation -->
+    <nav
+      class="md:hidden bg-white space-y-2 px-4 py-3 hidden"
+      id="mobile-menu"
+    >
+      <a href="#" class="block text-gray-600 hover:text-blue-600 font-medium">Accueil</a>
+      <a href="#" class="block text-gray-600 hover:text-blue-600 font-medium">Nos Prestations</a>
+      <a href="#" class="block text-gray-600 hover:text-blue-600 font-medium">E-services</a>
+      <a href="#" class="block text-gray-600 hover:text-blue-600 font-medium">Mon espace Usager</a>
+      <a href="#" class="block text-gray-600 hover:text-blue-600 font-medium">Préoccupations</a>
+      <a href="#" class="block text-gray-600 hover:text-blue-600 font-medium">Contact</a>
+    </nav>
+  </header>
+
+  
+  
